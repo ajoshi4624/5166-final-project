@@ -18,7 +18,7 @@ export default function Layout() {
       <header role="banner" className="top-nav">
         <nav aria-label="Main menu">
           <div className="nav-inner">
-            <span className="brand">Axx</span>
+            <span className="brand">A02</span>
             <ul>
               <li><Link to="/dashboard">Dashboard</Link></li>
               <li><Link to="/summary">Summary</Link></li>
