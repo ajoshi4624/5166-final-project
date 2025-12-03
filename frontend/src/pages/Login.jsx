@@ -25,7 +25,7 @@ export default function Login() {
   return (
     <div className="login-page">
       <div className="login-card" role="main">
-        <h1>Login to Axx</h1>
+        <h1>Login to A02</h1>
         <p className="login-subtitle">
           Use the demo credentials to access the dashboard and charts.
         </p>
