@@ -1,12 +1,12 @@
-import { Link, Outlet, useNavigate } from 'react-router-dom';
-import { clearToken, isLoggedIn } from './auth';
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import { clearToken, isLoggedIn } from "./auth";
 
 export default function Layout() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
     clearToken();
-    navigate('/login', { replace: true });
+    navigate("/login", { replace: true });
   };
 
   return (
@@ -20,9 +20,15 @@ export default function Layout() {
           <div className="nav-inner">
             <span className="brand">A02</span>
             <ul>
-              <li><Link to="/dashboard">Dashboard</Link></li>
-              <li><Link to="/summary">Summary</Link></li>
-              <li><Link to="/reports">Reports</Link></li>
+              <li>
+                <Link to="/dashboard">Dashboard</Link>
+              </li>
+              <li>
+                <Link to="/summary">Summary</Link>
+              </li>
+              <li>
+                <Link to="/reports">Reports</Link>
+              </li>
               {isLoggedIn() && (
                 <li>
                   <button onClick={handleLogout} aria-label="Log out">
