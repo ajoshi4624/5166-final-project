@@ -263,3 +263,21 @@ p {
     padding: 1.1rem 1.2rem;
   }
 }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #004aad; /* Your blue theme */
+  color: white;
+  padding: 10px 16px;
+  z-index: 9999;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0; /* Makes it visible when focused */
+}
